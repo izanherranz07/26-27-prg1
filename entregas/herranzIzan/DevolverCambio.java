@@ -39,7 +39,7 @@ public class DevolverCambio {
         int numMonedas2 = resto5 / MONEDA_2;
         int numMonedas1 = resto5 % MONEDA_2;
 
-                System.out.println();
+        System.out.println();
         System.out.println(numBilletes100 + " billete(s) de 100 €");
         System.out.println(numBilletes50 + " billete(s) de 50 €");
         System.out.println(numBilletes20 + " billete(s) de 20 €");
@@ -47,5 +47,7 @@ public class DevolverCambio {
         System.out.println(numBilletes5 + " billete(s) de 5 €");
         System.out.println(numMonedas2 + " moneda(s) de 2 €");
         System.out.println(numMonedas1 + " moneda(s) de 1 €");
+
+        teclado.close();
     }
 }
