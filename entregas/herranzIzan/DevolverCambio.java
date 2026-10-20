@@ -18,5 +18,25 @@ public class DevolverCambio {
 
         System.out.println("¿Con cuántos euros paga?");
         int pagaCon = teclado.nextInt();
+
+                int cambio = pagaCon - debePagar;
+
+        int numBilletes100 = cambio / BILLETE_100;
+        int resto100 = cambio % BILLETE_100;
+
+        int numBilletes50 = resto100 / BILLETE_50;
+        int resto50 = resto100 % BILLETE_50;
+
+        int numBilletes20 = resto50 / BILLETE_20;
+        int resto20 = resto50 % BILLETE_20;
+
+        int numBilletes10 = resto20 / BILLETE_10;
+        int resto10 = resto20 % BILLETE_10;
+
+        int numBilletes5 = resto10 / BILLETE_5;
+        int resto5 = resto10 % BILLETE_5;
+
+        int numMonedas2 = resto5 / MONEDA_2;
+        int numMonedas1 = resto5 % MONEDA_2;
     }
 }
